@@ -14,8 +14,11 @@
 	<name>userService</name>
 	<description>userService Microservice fot SayHellow App</description>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 		<spring-cloud.version>2023.0.0</spring-cloud.version>
+		<spring-boot-starter-data-jpa.version>3.2.5</spring-boot-starter-data-jpa.version>
+		<mysql-connector-java.version>8.0.26</mysql-connector-java.version>
+		<hibernate-core.version>5.6.0.Final</hibernate-core.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -35,6 +38,21 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>${spring-boot-starter-data-jpa.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql-connector-java.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate-core.version}</version>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>
